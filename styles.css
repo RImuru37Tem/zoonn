@@ -1,0 +1,795 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: white; /* Бежевый цвет фона */
+    padding: 25px 0; /* Увеличил на 5 пикселей */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+    width: 100%;
+    z-index: 1000; /* Для обеспечения поверхности */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px; /* Добавим отступы внутри контейнера */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Размер логотипа */
+    width: 150px;
+    margin-right: 10px;
+}
+
+.navigation {
+    margin-left: auto; /* Сдвигает навигацию вправо */
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    color: #333; /* Цвет ссылок */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #007bff; /* Цвет ссылок при наведении */
+}
+
+.main-content {
+    display: flex;
+    max-width: 1500px;
+    margin: 100px auto 0; /* Убрали верхний отступ и добавили отступ снизу */
+    padding: 40px;
+}
+
+.content-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.content-text li {
+    margin-bottom: 5px;
+}
+
+.content-image {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content-image img:hover {
+    transform: scale(1.1); /* Увеличивает изображение при наведении */
+}
+
+.services {
+    background-color: #f5f5f5; /* Серый фон для секции */
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 20px; /* Расстояние между блоками */
+    justify-content: center;
+}
+
+.service {
+    background-color: #ccc; /* Серый фон для каждого раздела */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+}
+
+.service h3 {
+    font-size: 1.3rem; /* Уменьшаем размер заголовка */
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+}
+
+.service p {
+    font-size: 1rem; /* Уменьшаем размер текста */
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+}
+
+.africa {
+    display: flex;
+    max-width: 1050px;
+    margin: 20px auto 0; /* Убрали верхний отступ и добавили отступ снизу */
+    padding: 25px;
+}
+
+.africa-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.africa-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.africa-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.africa-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.africa-text li {
+    margin-bottom: 5px;
+}
+
+.africa-image {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.africa-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.africa-image img:hover {
+    transform: scale(1.1); /* Увеличивает изображение при наведении */
+}
+
+.btn-purple {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #800080; /* Фиолетовый цвет кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    margin-top: 20px; /* Добавим отступ сверху */
+    margin-left: auto; /* Центрируем кнопку по горизонтали */
+    margin-right: auto;
+}
+
+.btn-purple:hover {
+    background-color: #6a006a; /* Цвет кнопки при наведении */
+}
+
+.island {
+    display: flex;
+    max-width: 1050px;
+    margin: 50px auto 0; /* Убрали верхний отступ и добавили отступ снизу */
+    padding: 50px;
+}
+
+.island-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.island-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.island-image img:hover {
+    transform: scale(1.1); /* Увеличивает изображение при наведении */
+}
+
+.island-text {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.island-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.island-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.island-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.island-text li {
+    margin-bottom: 5px;
+}
+
+.island-text .btn-purple {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #800080; /* Фиолетовый цвет кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    margin-top: 20px; /* Добавим отступ сверху */
+}
+
+.island-text .btn-purple:hover {
+    background-color: #6a006a; /* Цвет кнопки при наведении */
+}
+
+.subscribe {
+    background-color: #2A3030; /* Серый фон для секции */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subscribe-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscribe .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+}
+
+.subscribe p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f8fcff;
+    margin-bottom: 20px;
+}
+.subscribe h2 {
+    color: #FFFFFF;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.subscribe-form button {
+    padding: 10px 30px;
+    background-color: #800080; /* Фиолетовый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-top: -1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #6a006a; /* Цвет кнопки при наведении */
+}
+
+.reviews {
+    background-color: #f9f9f9; /* Серый фон для секции */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три столбца */
+    gap: 20px; /* Расстояние между блоками */
+    justify-items: center; /* Выравнивание по центру */
+}
+
+.review {
+    background-color: #fff; /* Белый фон для каждого отзыва */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+    text-align: left;
+}
+
+.review .rating {
+    color: gold; /* Золотой цвет для рейтинга */
+    font-size: 2rem; /* Увеличим размер рейтинга */
+    display: block; /* Для выравнивания по центру */
+    margin: 0 auto 10px; /* Для выравнивания по центру и добавления отступа снизу */
+}
+
+.review-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review h3 {
+    font-size: 1.3rem; /* Размер имени */
+    margin: 10px 0; /* Добавим немного отступов */
+}
+
+.review-text {
+    font-size: 1rem; /* Размер текста отзыва */
+    line-height: 1.6;
+    color: #333;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-images img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.about {
+    background-color: #f9f9f9; /* Серый фон для секции */
+    padding: 10px 10px;
+    text-align: left;
+    display: flex; /* Добавим flex для выравнивания элементов */
+    align-items: center; /* Выравнивание элементов по центру */
+}
+
+.about .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый и тонкий шрифт */
+    color: #333; /* Цвет заголовка */
+}
+
+.about-text {
+    max-width: 800px;
+    margin-left: 50px;
+    flex: 1;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text a {
+    color: #007bff; /* Цвет ссылок */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+    color: #0056b3; /* Цвет ссылок при наведении */
+}
+
+.about-divider {
+    margin-top: -30px;
+    width: 100%;
+    height: 2px;
+    background-color: #333; /* Цвет линии */
+}
+
+.about-image {
+    margin-left: auto; /* Помещаем изображение в конец блока */
+    margin-right: 150px; /* Отступ справа для изображения */
+}
+
+.about-image img {
+    margin-top: 50px;
+    max-width: 400px;   /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 5px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+}
+
+.team {
+    background-color: #f9f9f9; /* Серый фон для секции */
+    padding: 50px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.team .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.team-text {
+    max-width: 800px;
+    margin-left: 50px;
+    flex: 1;
+}
+
+.team-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-text a {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.team-text a:hover {
+    color: #0056b3;
+}
+
+.team-divider {
+    margin-top: -30px;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+}
+
+.contact {
+    background-color: #f9f9f9; /* Серый фон для контактной секции */
+    padding: 23px 20px;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-divider {
+    margin: 20px auto;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #6a006a;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-images img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Стили для раздела Туры */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tour img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.tour-info {
+    padding: 20px;
+}
+
+.tour-info h3 {
+    margin-top: 0;
+}
+
+.tour-info p {
+    margin-bottom: 20px;
+}
+
+.tour-info a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #800080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tour-info a:hover {
+    background-color: #555;
+}
+
+.content-images-a {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-images-a  img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content-images-a  img:hover {
+    transform: scale(1.1); /* Увеличивает изображение при наведении */
+}
+
+.main-content-a {
+    display: flex;
+    max-width: 1500px;
+    margin: 155px auto 0; /* Убрали верхний отступ и добавили отступ снизу */
+    padding: 40px;
+}
